@@ -1,0 +1,68 @@
+html {
+  box-sizing: border-box;
+}
+
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  max-width: 30%;
+  margin: 2em auto;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+header .link {
+  font-weight: bold;
+  color: #FFF;
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+}
+
+.todo-input {
+  flex: 7;
+  padding: 6px;
+}
+
+.todo-input:focus,
+.btn {
+  outline: none;
+}
+
+.btn {
+  flex: 1;
+  display: inline-block;
+  border: none;
+  background: #555;
+  color: #fff;
+  padding: 0.8em 2em;
+  cursor: pointer;
+}
+
+.checkbox {
+  margin-right: 5px;
+}
+
+button {
+  background: red;
+  color: #FFF;
+  border: none;
+  padding: 3px 7px;
+  border-radius: 50%;
+  cursor: pointer;
+  float: right;
+}
+
+button:focus { outline: 0; }

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header {
+  background-color: #c7c7c7;
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-header h2 {
+  font-size: 2.2em;
+  padding: 0.8em;
+  display: inline-block;
+}
+
+.site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.8em;
+  margin: 1.2em;
+}
+
+.site-nav li {
+  list-style-type: none;
+  margin: 0 0.4em;
+}
+
+.site-nav li a {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 2px solid #c7c7c7;
+  border-radius: 1em;
+  padding: 0.1em 0.5em;
+  transition: border-color ease-in-out .2s;
+}
+
+.site-nav li a:hover { border-color: #000}
+
+.cars-list {
+  display: flex;
+  margin: 0 auto;
+}
+
+.cars-list span {
+  border-bottom: 1.4px solid gray;
+}
+
+.cars-list li {
+  margin: 2em;
+  list-style-type: none;
+  border: 1px solid gray;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.cars-list li h2,
+.cars-list li h4,
+.cars-list li p,
+.cars-list li form {
+  margin: 0.5rem;
+}
+
+.cars-list li form {
+  padding: 1em 0;
+}
+
+.cars-list li input {
+  padding: 0.3em;
+}
+
+.cars-list li input:focus { outline: none; }
+
+.cars-list li button {
+  margin: 0 1em;
+  padding: 0.5em;
+  border-radius: 0.2em;
+  outline: none;
+  cursor: pointer;
+}
+
+.cars-list li button:hover {
+  background: #fff;
+  color: #000;
+}
